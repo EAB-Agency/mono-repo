@@ -1,0 +1,25 @@
+{
+  "name": "source-smartsheet-plugin",
+  "version": "1.0.0",
+  "description": "Smartsheet plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build script setup\""
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "author": "Bob Smith <bob.smith@eab.com>",
+  "license": "0BSD",
+  "dependencies": {
+    "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
+    "node-fetch": "^2.6.1",
+    "query-string": "^6.13.7",
+    "smartsheet": "^2.101.0",
+    "subscriptions-transport-ws": "^0.9.18",
+    "ws": "^7.4.0"
+  }
+}

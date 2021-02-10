@@ -1,14 +1,9 @@
 {
   "npmScope": "eab-agency",
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "implicitDependencies": {
     "workspace.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
@@ -17,15 +12,16 @@
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
-      }
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
     }
   },
-  "projects": {}
+  "projects": {
+    "iwc-proof": { "tags": [] },
+    "iwc-proof-e2e": { "tags": [], "implicitDependencies": ["iwc-proof"] },
+    "smartsheet-sitemap": { "tags": [] },
+    "smartsheet-sitemap-e2e": {
+      "tags": [],
+      "implicitDependencies": ["smartsheet-sitemap"]
+    }
+  }
 }

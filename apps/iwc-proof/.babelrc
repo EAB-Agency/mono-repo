@@ -1,0 +1,14 @@
+{
+  "presets": ["@nrwl/gatsby/babel"],
+  "plugins": [
+    [
+      "prismjs",
+      {
+        "languages": ["javascript", "css", "markup"],
+        "plugins": ["show-language", "copy-to-clipboard"],
+        "theme": "okaidia",
+        "css": true
+      }
+    ]
+  ]
+}

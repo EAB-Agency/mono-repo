@@ -37,3 +37,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+/apps/iwc-proof/node_modules
+/apps/iwc-proof/public
+/apps/iwc-proof/.cache
+
+/apps/smartsheet-sitemap/node_modules
+/apps/smartsheet-sitemap/public
+/apps/smartsheet-sitemap/.cache
