@@ -24,7 +24,7 @@ function projectChanged(currentProject, fromHash, toHash) {
   //get the list of changed projects from the output
   console.log('🚀 currentProject: ', currentProject);
   console.log('🚀 fromHash: ', fromHash);
-  console.log('🚀 toHash: ', toHash);
+  console.log('🚀 output: ', output);
   const changedProjects = JSON.parse(output).projects;
   if (changedProjects.find((project) => project === currentProject)) {
     return true;
