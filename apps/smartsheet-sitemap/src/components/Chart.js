@@ -9,7 +9,6 @@ OrgChart.templates.GenericInterior.node =
   '<svg width="120" height="150" viewBox="0 0 120 150" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="150" rx="4" fill="#B8D0B9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16H112C114.209 16 116 17.7909 116 20V142C116 144.209 114.209 146 112 146H8C5.79086 146 4 144.209 4 142V20C4 17.7909 5.79086 16 8 16Z" fill="#F6F8F9"/><rect x="6" y="18" width="35" height="126" rx="4" fill="#DEE7EE"/><path d="M24 48C30.6274 48 36 42.6274 36 36C36 29.3726 30.6274 24 24 24C17.3726 24 12 29.3726 12 36C12 42.6274 17.3726 48 24 48Z" fill="#B8C5D0"/><mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="12" y="24" width="24" height="24"><path d="M24 48C30.6274 48 36 42.6274 36 36C36 29.3726 30.6274 24 24 24C17.3726 24 12 29.3726 12 36C12 42.6274 17.3726 48 24 48Z" fill="white"/></mask><g mask="url(#mask0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.5 43.56C27.54 43.56 30 45.01 30 46.79C30 48.57 27.54 48.86 24.5 48.86C21.46 48.86 19 48.57 19 46.79C19 45.01 21.46 43.56 24.5 43.56ZM24.5 33C26.43 32.9528 28.1962 34.0794 28.9672 35.8493C29.7381 37.6193 29.3601 39.6798 28.0111 41.0608C26.6621 42.4419 24.611 42.8682 22.8234 42.139C21.0359 41.4098 19.8681 39.6705 19.87 37.74C19.8548 36.4972 20.3342 35.2994 21.2026 34.4104C22.0711 33.5213 23.2573 33.0139 24.5 33Z" fill="#89969F"/></g><rect x="13" y="54" width="21" height="3" rx="1" fill="#B8C5D0"/><rect x="13" y="60" width="21" height="3" rx="1" fill="#B8C5D0"/><rect x="13" y="66" width="21" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="36" width="52" height="3" rx="1" fill="#89969F"/><rect x="47" y="47" width="61" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="53" width="62" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="59" width="59" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="65" width="60" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="71" width="61" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="77" width="59" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="83" width="62" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="89" width="49" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="95" width="59" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="101" width="60" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="107" width="63" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="113" width="56" height="3" rx="1" fill="#B8C5D0"/><rect x="47" y="119" width="49" height="3" rx="1" fill="#B8C5D0"/></svg>';
 OrgChart.templates.GenericInterior.field_0 = `<foreignObject x="0" y="150" width="120" height="70"><p xmlns="http://www.w3.org/1999/xhtml">{val}</p></foreignObject>`;
 OrgChart.templates.GenericInterior.field_2;
-OrgChart.templates.GenericInterior.sourceUrl;
 
 // '<text style="font-size: 14px;" fill="#454D58" x="60" y="170" text-anchor="middle">{val}</text>'
 OrgChart.templates.GenericInterior.nodeMenuButton =
@@ -22,6 +21,9 @@ OrgChart.templates.GenericInterior.nodeMenuButton =
   '</g>';
 OrgChart.templates.GenericInterior.sourceUrl =
   '<g transform="matrix(0.075,0,0,0.075,90,-8)"><a target="_blank" xlink:href="{val}"><rect x="0" y="0" width="420" height="420" fill-opacity="0"></rect><g transform="matrix(1,0,0,1,40,40)"><path fill="#F6F8F9" d="M118.5,229.156c4.042,4.044,9.415,6.271,15.132,6.271c5.715,0,11.089-2.227,15.133-6.269l29.664-29.662 c4.09-4.093,6.162-9.442,6.24-14.816c5.601-0.078,10.857-2.283,14.829-6.253l29.66-29.662c4.042-4.043,6.269-9.417,6.269-15.133 c0-5.716-2.227-11.09-6.269-15.13l-9.806-9.806c-4.041-4.043-9.415-6.27-15.132-6.27c-5.716,0-11.09,2.227-15.132,6.269 l-29.663,29.662c-4.092,4.092-6.164,9.443-6.242,14.817c-5.601,0.078-10.857,2.283-14.828,6.252l-29.661,29.662 c-4.042,4.043-6.269,9.418-6.268,15.136c0,5.716,2.227,11.089,6.269,15.129L118.5,229.156z M168.618,147.548l29.662-29.661 c1.587-1.587,3.696-2.461,5.94-2.461c2.243,0,4.353,0.874,5.938,2.461l9.808,9.808c1.586,1.586,2.46,3.694,2.46,5.937 c0,2.244-0.874,4.354-2.462,5.941l-29.658,29.661c-1.588,1.587-3.697,2.46-5.941,2.46c-2.243,0-4.353-0.874-5.938-2.46 l-0.309-0.309l19.598-19.598c2.539-2.539,2.539-6.654,0-9.192c-2.537-2.538-6.654-2.538-9.191,0l-19.599,19.598l-0.308-0.308 C165.344,156.152,165.345,150.823,168.618,147.548z M117.888,198.28l29.66-29.661c1.587-1.586,3.695-2.46,5.939-2.46 c2.242,0,4.349,0.872,5.934,2.455c0.002,0.001,0.004,0.003,0.005,0.005l0.309,0.309l-19.598,19.598 c-2.539,2.538-2.539,6.653,0,9.191c1.269,1.27,2.933,1.904,4.596,1.904s3.327-0.635,4.596-1.904l19.599-19.598l0.309,0.309 c3.273,3.273,3.273,8.603,0,11.877l-29.662,29.66c-1.588,1.588-3.698,2.462-5.941,2.462c-2.243,0-4.352-0.874-5.938-2.462 l-9.807-9.806c-1.586-1.586-2.46-3.694-2.46-5.938C115.426,201.978,116.3,199.868,117.888,198.28z"/></g></a></g>';
+
+OrgChart.templates.GenericInterior.figmaUrl =
+  '<g transform="matrix(0.015,0,0,0.015,100,130)"><a target="_blank" xlink:href="{val}"><path d="M137.7,826.4A137.8,137.8,0,0,0,275.5,688.7V550.9H137.7a137.8,137.8,0,0,0,0,275.5Z" style="fill:#0acf83"/><path d="M0,413.2A137.8,137.8,0,0,1,137.7,275.5H275.5V550.9H137.7A137.8,137.8,0,0,1,0,413.2Z" style="fill:#a259ff"/><path d="M0,137.7A137.8,137.8,0,0,1,137.7,0H275.5V275.5H137.7A137.8,137.8,0,0,1,0,137.7Z" style="fill:#f24e1e"/><path d="M275.5,0H413.2a137.8,137.8,0,0,1,0,275.5H275.5Z" style="fill:#ff7262"/><path d="M550.9,413.2A137.7,137.7,0,1,1,413.2,275.5,137.8,137.8,0,0,1,550.9,413.2Z" style="fill:#1abcfe"/></a></g>';
 
 OrgChart.templates.LandingPage = Object.assign(
   {},
@@ -155,7 +157,9 @@ export default class MyChart extends Component {
       },
 
       nodeBinding: {
-        field_0: 'name',
+        field_0: 'Page Name',
+        sourceUrl: 'sourceUrl',
+        figmaUrl: 'figmaUrl',
       },
     });
   }

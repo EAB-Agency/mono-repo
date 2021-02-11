@@ -53,17 +53,17 @@ export default function Home({ data }) {
     .map((item) => grabColumnID(item))
     .shift();
 
-  const figmaURLID = columns
+  const figmaUrlID = columns
     .filter(filterColumnByName('Prototype'))
     .map((item) => grabColumnID(item))
     .shift();
 
   console.log(
-    'pageTitleID, pageTypeID, sourceURLID, figmaURLID',
+    'pageTitleID, pageTypeID, sourceURLID, figmaUrlID',
     pageTitleID,
     pageTypeID,
     sourceURLID,
-    figmaURLID
+    figmaUrlID
   );
 
   // map over rows and grab contents
@@ -101,15 +101,15 @@ export default function Home({ data }) {
 
     row.cells
       .filter((item) => item.columnId === pageTitleID)
-      .map((cell) => (container.name = cell.displayValue));
+      .map((cell) => (container['Page Name'] = cell.displayValue));
 
     row.cells
       .filter((item) => item.columnId === sourceURLID)
       .map((cell) => (container.sourceUrl = cell.displayValue));
 
     row.cells
-      .filter((item) => item.columnId === figmaURLID)
-      .map((cell) => (container.figmaURL = cell.displayValue));
+      .filter((item) => item.columnId === figmaUrlID)
+      .map((cell) => (container.figmaUrl = cell.displayValue));
 
     return container;
   });
