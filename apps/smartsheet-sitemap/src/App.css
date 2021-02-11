@@ -2,7 +2,7 @@ body,
 #root,
 ___gatsby {
   height: 100vh;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
 h1 {
@@ -11,6 +11,7 @@ h1 {
 .ss-link {
   display: block;
   margin-top: 0.1rem;
+  color: red;
 }
 
 .ss-link a {
