@@ -45,3 +45,6 @@ Thumbs.db
 /apps/smartsheet-sitemap/node_modules
 /apps/smartsheet-sitemap/public
 /apps/smartsheet-sitemap/.cache
+
+# Local Netlify folder
+.netlify
