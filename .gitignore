@@ -48,3 +48,6 @@ Thumbs.db
 
 # Local Netlify folder
 .netlify
+/apps/morgan-state-microsite/node_modules
+/apps/morgan-state-microsite/public
+/apps/morgan-state-microsite/.cache

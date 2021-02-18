@@ -33,12 +33,16 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/iwc-proof/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "apps/iwc-proof/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/iwc-proof"],
+          "outputs": [
+            "coverage/apps/iwc-proof"
+          ],
           "options": {
             "jestConfig": "apps/iwc-proof/jest.config.js",
             "passWithNoTests": true
@@ -67,7 +71,9 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/iwc-proof-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/iwc-proof-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
@@ -91,7 +97,7 @@
           }
         },
         "deploy": {
-          "builder": "@netlify-builder/deploy:deploy",
+          "executor": "@netlify-builder/deploy:deploy",
           "options": {
             "outputPath": "apps/smartsheet-sitemap/public",
             "siteId": "b2bb4647-64eb-4f02-8733-227ea9b575f4"
@@ -111,7 +117,9 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/smartsheet-sitemap/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": [
+              "apps/smartsheet-sitemap/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         }
       }
@@ -137,7 +145,48 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/smartsheet-sitemap-e2e/**/*.js"]
+            "lintFilePatterns": [
+              "apps/smartsheet-sitemap-e2e/**/*.js"
+            ]
+          }
+        }
+      }
+    },
+    "morgan-state-microsite": {
+      "root": "apps/morgan-state-microsite",
+      "sourceRoot": "apps/morgan-state-microsite/src",
+      "projectType": "application",
+      "generators": {},
+      "targets": {
+        "build": {
+          "executor": "@nrwl/gatsby:build",
+          "options": {
+            "outputPath": "apps/morgan-state-microsite/public",
+            "uglify": true,
+            "color": true,
+            "profile": false
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/gatsby:server",
+          "options": {
+            "buildTarget": "morgan-state-microsite:build"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "morgan-state-microsite:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/morgan-state-microsite/**/*.{ts,tsx,js,jsx}"
+            ]
           }
         }
       }

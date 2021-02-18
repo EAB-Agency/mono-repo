@@ -1,6 +1,8 @@
 {
   "npmScope": "eab-agency",
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "implicitDependencies": {
     "workspace.json": "*",
     "tsconfig.base.json": "*",
@@ -11,16 +13,28 @@
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
     }
   },
   "projects": {
-    "iwc-proof": { "tags": [] },
-    "iwc-proof-e2e": { "tags": [], "implicitDependencies": ["iwc-proof"] },
-    "smartsheet-sitemap": { "tags": [] },
+    "iwc-proof": {
+      "tags": []
+    },
+    "iwc-proof-e2e": {
+      "tags": [],
+      "implicitDependencies": ["iwc-proof"]
+    },
+    "smartsheet-sitemap": {
+      "tags": []
+    },
     "smartsheet-sitemap-e2e": {
       "tags": [],
       "implicitDependencies": ["smartsheet-sitemap"]
+    },
+    "morgan-state-microsite": {
+      "tags": []
     }
   }
 }

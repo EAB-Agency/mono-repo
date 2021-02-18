@@ -10,3 +10,7 @@
 /apps/smartsheet-sitemap/node_modules
 /apps/smartsheet-sitemap/public
 /apps/smartsheet-sitemap/.cache
+
+/apps/morgan-state-microsite/node_modules
+/apps/morgan-state-microsite/public
+/apps/morgan-state-microsite/.cache
