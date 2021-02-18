@@ -1,0 +1,11 @@
+{
+  "development": {
+    "host": "preview.contentful.com",
+    "spaceId": "xr5sluneow6q",
+    "accessToken": "YHlVgtrJC8QuErdtHsE0YhqQDB32zMu0KbqK-lZ1qvQ"
+  },
+  "production": {
+    "spaceId": "xr5sluneow6q",
+    "accessToken": "3aHokjl5JQFDHHQAl1HNVCYOW8W6rcZED7-w6UOvAmw"
+  }
+}
