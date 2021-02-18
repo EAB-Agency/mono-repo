@@ -99,18 +99,16 @@ class BlogPostTemplate extends React.Component {
             {/* <p>{post.metaDescription.internal.content}</p> */}
 
             <h2>iwc</h2>
-            <p>
-              {post.iwc.iwcTitle} | {post.iwc.iwcLocation}
-            </p>
+            <p>{/* {post.iwc.iwcTitle} | {post.iwc.iwcLocation} */}</p>
 
             <h2>relatedPrograms</h2>
-            {post.relatedPrograms.map((node) => {
+            {/* {post.relatedPrograms.map((node) => {
               return (
                 <li key={node.id}>
                   <ProgramPreview program={node} />
                 </li>
               );
-            })}
+            })} */}
           </div>
         </div>
       </Layout>

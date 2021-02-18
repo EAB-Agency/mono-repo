@@ -33,16 +33,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/iwc-proof/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/iwc-proof/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/iwc-proof"
-          ],
+          "outputs": ["coverage/apps/iwc-proof"],
           "options": {
             "jestConfig": "apps/iwc-proof/jest.config.js",
             "passWithNoTests": true
@@ -71,9 +67,7 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/iwc-proof-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/iwc-proof-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -117,9 +111,7 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/smartsheet-sitemap/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/smartsheet-sitemap/**/*.{ts,tsx,js,jsx}"]
           }
         }
       }
@@ -145,9 +137,7 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/smartsheet-sitemap-e2e/**/*.js"
-            ]
+            "lintFilePatterns": ["apps/smartsheet-sitemap-e2e/**/*.js"]
           }
         }
       }
@@ -179,6 +169,13 @@
             "production": {
               "buildTarget": "morgan-state-microsite:build:production"
             }
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "apps/morgan-state-microsite/public",
+            "siteId": "8a67b0dc-7b06-4424-884f-c001722f51b9"
           }
         },
         "lint": {
