@@ -13,6 +13,7 @@ export default function Home({ data }) {
     'Page Type',
     'Source URL',
     'Main Nav',
+    'Notes',
   ];
   // .map(item => item.replace(/\s/g, "_"))
 
@@ -58,12 +59,18 @@ export default function Home({ data }) {
     .map((item) => grabColumnID(item))
     .shift();
 
+  const noteID = columns
+    .filter(filterColumnByName('Notes'))
+    .map((item) => grabColumnID(item))
+    .shift();
+
   console.log(
     'pageTitleID, pageTypeID, sourceURLID, figmaUrlID',
     pageTitleID,
     pageTypeID,
     sourceURLID,
-    figmaUrlID
+    figmaUrlID,
+    noteID
   );
 
   // map over rows and grab contents
@@ -76,25 +83,25 @@ export default function Home({ data }) {
     // console.log("The array is: ", array)
     // console.log('The value of "this" is', this)
     // console.log("The index is: ", index)
-    allColumnIDs.map(function (columnID, indexOfColumnID) {
-      // console.log("*************allColumnIDs: The columnID", columnID)
-      // console.log('allColumnIDs: The value of "this" is', this)
-      // console.log("allColumnIDs: The i is: ", i)
-      //
-      //
-      // below code loops through all of the fields_# to expose them all to the Chart
-      //
-      // row.cells
-      //   .filter(function (cell) {
-      //     return cell.columnId === this;
-      //   }, columnID)
-      //   .map(function (cell) {
-      //     // console.log("cell.displayValue", cell.displayValue)
-      //     // console.log("=============columnID", this)
-      //     container[`field_${indexOfColumnID}`] = cell.displayValue;
-      //     return (container.name = cell.displayValue);
-      //   }, indexOfColumnID);
-    });
+    // allColumnIDs.map(function (columnID, indexOfColumnID) {
+    // console.log("*************allColumnIDs: The columnID", columnID)
+    // console.log('allColumnIDs: The value of "this" is', this)
+    // console.log("allColumnIDs: The i is: ", i)
+    //
+    //
+    // below code loops through all of the fields_# to expose them all to the Chart
+    //
+    // row.cells
+    //   .filter(function (cell) {
+    //     return cell.columnId === this;
+    //   }, columnID)
+    //   .map(function (cell) {
+    //     // console.log("cell.displayValue", cell.displayValue)
+    //     // console.log("=============columnID", this)
+    //     container[`field_${indexOfColumnID}`] = cell.displayValue;
+    //     return (container.name = cell.displayValue);
+    //   }, indexOfColumnID);
+    // })
     row.cells
       .filter((item) => item.columnId === pageTypeID)
       .map((cell) => (container.tags = [cell.displayValue]));
@@ -110,6 +117,10 @@ export default function Home({ data }) {
     row.cells
       .filter((item) => item.columnId === figmaUrlID)
       .map((cell) => (container.figmaUrl = cell.displayValue));
+
+    row.cells
+      .filter((item) => item.columnId === noteID)
+      .map((cell) => (container.note = cell.displayValue));
 
     return container;
   });
