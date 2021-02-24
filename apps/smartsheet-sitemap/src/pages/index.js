@@ -116,7 +116,7 @@ export default function Home({ data }) {
 
     row.cells
       .filter((item) => item.columnId === figmaUrlID)
-      .map((cell) => (container.figmaUrl = cell.displayValue));
+      .map((cell) => (container['Prototype'] = cell.displayValue));
 
     row.cells
       .filter((item) => item.columnId === noteID)
