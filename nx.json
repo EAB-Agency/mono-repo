@@ -1,8 +1,4 @@
 {
-  "npmScope": "eab-agency",
-  "affected": {
-    "defaultBase": "master"
-  },
   "implicitDependencies": {
     "workspace.json": "*",
     "tsconfig.base.json": "*",
@@ -10,6 +6,10 @@
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "eab-agency",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
@@ -34,6 +34,9 @@
       "implicitDependencies": ["smartsheet-sitemap"]
     },
     "morgan-state-microsite": {
+      "tags": []
+    },
+    "test-app": {
       "tags": []
     }
   }

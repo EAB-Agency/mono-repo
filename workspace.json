@@ -1,5 +1,21 @@
 {
   "version": 2,
+  "cli": {
+    "defaultCollection": "@nrwl/gatsby"
+  },
+  "defaultProject": "iwc-proof",
+  "generators": {
+    "@nrwl/gatsby": {
+      "application": {
+        "style": "scss"
+      }
+    },
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    }
+  },
   "projects": {
     "iwc-proof": {
       "root": "apps/iwc-proof",
@@ -172,7 +188,7 @@
           }
         },
         "deploy": {
-          "builder": "@netlify-builder/deploy:deploy",
+          "executor": "@netlify-builder/deploy:deploy",
           "options": {
             "outputPath": "apps/morgan-state-microsite/public",
             "siteId": "8a67b0dc-7b06-4424-884f-c001722f51b9"
@@ -188,14 +204,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/gatsby"
-  },
-  "generators": {
-    "@nrwl/gatsby": {
-      "application": {}
-    }
-  },
-  "defaultProject": "iwc-proof"
+  }
 }

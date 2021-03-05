@@ -12,6 +12,7 @@ class RootIndex extends React.Component {
 
     return (
       <Layout>
+        index page
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <div className="wrapper">
